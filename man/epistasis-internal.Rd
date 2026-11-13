@@ -1,4 +1,5 @@
 \name{epistasis-internal}
+\alias{epistasis-internal}
 \title{epistasis-internal}
 
 \description{

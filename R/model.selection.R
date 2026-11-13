@@ -1,6 +1,6 @@
 calculate.loglik_Y = function(chain, result, lower.upper=lower.upper, verbose = TRUE)
 {
-	if(class(result) == "epi") 
+	if(class(result)[1L] == "epi") 
 	{
 		n = nrow(result$data)
 	}else{
@@ -28,7 +28,7 @@ calculate.loglik_Y = function(chain, result, lower.upper=lower.upper, verbose = 
 model.selection = function( result, criterion, lower.upper, ebic.gamma = 0.5,  ncores = 1, loglik_Y=TRUE, verbose = TRUE)
 {
 
-	if(class(result) == "epi") 
+	if(class(result)[1L] == "epi") 
 	{
 		p	 = ncol(result$path[[1]])
 		nrho = length(result$rho)
